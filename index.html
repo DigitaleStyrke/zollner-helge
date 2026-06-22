@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zøllner Helge — Anlægsgartner i Frederiksværk</title>
+<meta name="description" content="Vi skaber smukke uderum — fra haveanlæg til terrasse og belægning. Ring til Zøllner Helge i Frederiksværk på 47 72 22 03.">
+<link rel="canonical" href="https://www.{{NAVN_SLUG}}.dk">
+<meta property="og:title" content="Zøllner Helge — Anlægsgartner i Frederiksværk">
+<meta property="og:description" content="Vi skaber smukke uderum — fra haveanlæg til terrasse og belægning.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:oklch(0.984 0.006 85);
+  --paper-2:oklch(0.965 0.008 80);
+  --card:oklch(0.995 0.004 85);
+  --ink:oklch(0.245 0.016 65);
+  --ink-soft:oklch(0.46 0.014 65);
+  --ink-faint:oklch(0.62 0.012 70);
+  --line:oklch(0.885 0.012 75);
+  --line-soft:oklch(0.925 0.009 78);
+  --accent:#22c55e;
+  --accent-deep:#22c55e;
+  --serif:"Newsreader",Georgia,serif;
+  --sans:"Hanken Grotesk",system-ui,sans-serif;
+  --mono:"JetBrains Mono",monospace;
+  --wrap:1180px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased;font-size:17px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 32px}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%;width:100%;height:100%;object-fit:cover}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:28px;height:1px;background:var(--accent)}
+h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-0.01em;line-height:1.08;text-wrap:balance}
+
+/* nav */
+header{position:sticky;top:0;z-index:50;background:oklch(0.984 0.006 85 / .92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line-soft)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{display:flex;align-items:center;gap:11px;font-family:var(--serif);font-size:21px;letter-spacing:-0.01em}
+.brand .mark{width:30px;height:30px;border:1.5px solid var(--ink);border-radius:50%;display:grid;place-items:center;font-family:var(--mono);font-size:13px;font-weight:500;color:var(--accent);border-color:var(--accent)}
+.nav-links{display:flex;gap:30px;font-size:15px;color:var(--ink-soft)}
+.nav-links a{transition:.15s}.nav-links a:hover{color:var(--ink)}
+.nav-right{display:flex;align-items:center;gap:20px}
+.nav-phone{font-family:var(--mono);font-size:14px;letter-spacing:.02em}
+.btn{font-family:var(--sans);font-size:15px;font-weight:600;padding:11px 22px;border-radius:2px;cursor:pointer;transition:.18s;display:inline-flex;align-items:center;gap:9px;border:1px solid transparent}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent-deep);filter:brightness(0.9)}
+.btn-ghost{border-color:var(--line);color:var(--ink);background:transparent}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+
+/* hero */
+.hero{padding:84px 0 64px;border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:end}
+.hero h1{font-size:clamp(40px,5vw,72px);margin:26px 0 0}
+.hero h1 em{font-style:italic;color:var(--accent)}
+.hero .lede{font-size:19px;color:var(--ink-soft);margin-top:22px;max-width:36ch;line-height:1.6}
+.hero .about-blurb{margin-top:18px;font-size:15px;color:var(--ink-soft);max-width:38ch;line-height:1.65;border-left:3px solid var(--accent);padding-left:14px}
+.hero-cta{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
+.hero-side{border-left:1px solid var(--line);padding-left:40px}
+.hero-side .label{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:18px}
+.hero-list{list-style:none;display:flex;flex-direction:column}
+.hero-list li{padding:13px 0;border-bottom:1px solid var(--line-soft);display:flex;align-items:baseline;gap:13px;font-size:16px}
+.hero-list li:last-child{border-bottom:0}
+.hero-list .n{font-family:var(--mono);font-size:12px;color:var(--accent);min-width:22px}
+.hero-stats{display:flex;gap:32px;margin-top:30px;flex-wrap:wrap}
+.hero-stats .s .v{font-family:var(--serif);font-size:32px;color:var(--ink)}
+.hero-stats .s .k{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);margin-top:4px}
+.rating-badge{font-family:var(--mono);font-size:13px;display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);padding:8px 14px;margin-top:18px}
+.rating-badge .stars{color:var(--accent)}
+
+/* trust strip */
+.trust{border-bottom:1px solid var(--line);background:var(--paper-2)}
+.trust-row{display:flex;flex-wrap:wrap;gap:0;justify-content:space-between}
+.trust-item{flex:1;min-width:180px;padding:20px 24px;border-right:1px solid var(--line);font-size:14px;color:var(--ink-soft);display:flex;align-items:center;gap:11px}
+.trust-item:last-child{border-right:0}
+.trust-item .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);flex-shrink:0}
+
+/* section */
+section.blk{padding:96px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:56px}
+.sec-head h2{font-size:clamp(30px,3.4vw,46px);max-width:20ch}
+.sec-head .meta{font-family:var(--mono);font-size:13px;color:var(--ink-faint);max-width:30ch;text-align:right}
+
+/* services split */
+.serv{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line)}
+.serv-vis{border-right:1px solid var(--line);min-height:460px;overflow:hidden;position:relative}
+.serv-vis img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.serv-vis-ph{width:100%;height:100%;min-height:460px;background:var(--paper-2);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:12px;color:var(--ink-faint)}
+.serv-list{display:flex;flex-direction:column}
+.serv-item{padding:34px 38px;border-bottom:1px solid var(--line)}
+.serv-item:last-child{border-bottom:0}
+.serv-item h3{font-size:23px;margin-bottom:10px}
+.serv-item p{color:var(--ink-soft);font-size:15px;line-height:1.65}
+.serv-item .tag{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:12px;display:block}
+
+/* gallery */
+.gal-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:0;border:1px solid var(--line)}
+.gal-item{min-height:260px;overflow:hidden;border-right:1px solid var(--line);position:relative}
+.gal-item:last-child{border-right:0}
+.gal-item img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:.4s}
+.gal-item:hover img{transform:scale(1.04)}
+
+/* about / editorial */
+.about-sec{background:var(--ink);color:var(--paper)}
+.about-sec .eyebrow{color:var(--accent)}
+.about-sec .eyebrow::before{background:var(--accent)}
+.about-sec h2{color:var(--paper)}
+.about-sec .meta{color:oklch(0.7 0.01 70)}
+.about-body{font-family:var(--serif);font-size:clamp(22px,2.6vw,34px);line-height:1.3;letter-spacing:-0.01em;color:var(--paper);max-width:72ch}
+.about-stats{display:flex;gap:48px;margin-top:48px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.14);padding-top:36px}
+.about-stats .s .v{font-family:var(--serif);font-size:38px;color:var(--paper)}
+.about-stats .s .k{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:oklch(0.7 0.01 70);margin-top:6px}
+
+/* reviews / testimonial */
+.reviews-editorial{display:flex;flex-direction:column;gap:0}
+.rev-item{padding:32px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr auto;gap:32px;align-items:start}
+.rev-item:last-child{border-bottom:0}
+.rev-item blockquote{font-family:var(--serif);font-size:clamp(18px,2vw,24px);line-height:1.35;letter-spacing:-0.01em;color:var(--ink)}
+.rev-item .stars{color:var(--accent);font-size:16px;letter-spacing:2px;margin-bottom:14px}
+.rev-item .src{margin-top:18px;font-family:var(--mono);font-size:12px;color:var(--ink-faint)}
+.rev-aside{text-align:right;min-width:110px}
+.rev-aside .score{font-family:var(--serif);font-size:44px;color:var(--ink);line-height:1}
+.rev-aside .label{font-family:var(--mono);font-size:11px;color:var(--ink-faint);margin-top:6px}
+
+/* maps */
+.maps-sec{border-top:1px solid var(--line)}
+.maps-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line)}
+.maps-info{padding:48px;border-right:1px solid var(--line)}
+.maps-info h3{font-family:var(--serif);font-size:30px;margin-bottom:24px}
+.maps-info .detail{font-family:var(--mono);font-size:14px;color:var(--ink-soft);margin-bottom:12px;display:flex;gap:10px}
+.maps-info .detail strong{color:var(--ink);min-width:72px}
+.maps-embed{min-height:340px;position:relative}
+.maps-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+/* contact */
+.contact{background:var(--paper-2);border-top:1px solid var(--line)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.contact h2{font-size:clamp(28px,3.2vw,42px);margin:18px 0 16px}
+.contact .lede{color:var(--ink-soft);font-size:16px;max-width:38ch;line-height:1.65}
+.contact-info{margin-top:28px;display:flex;flex-direction:column;gap:12px;font-family:var(--mono);font-size:14px}
+.contact-form{background:var(--card);border:1px solid var(--line);padding:34px}
+.field{margin-bottom:18px}
+.field label{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);display:block;margin-bottom:8px}
+.field input,.field textarea{width:100%;padding:12px 14px;border:1px solid var(--line);background:var(--paper);font-family:var(--sans);font-size:15px;color:var(--ink);border-radius:2px}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--accent)}
+
+/* footer */
+footer{background:var(--ink);color:oklch(0.78 0.01 70);padding:64px 0 28px}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.14)}
+.foot-brand{font-family:var(--serif);font-size:22px;color:var(--paper);display:flex;align-items:center;gap:11px;margin-bottom:12px}
+.foot-brand .mark{width:28px;height:28px;border:1.5px solid var(--paper);border-radius:50%;display:grid;place-items:center;font-family:var(--mono);font-size:12px;color:var(--accent);border-color:var(--accent)}
+.foot-col h4{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:oklch(0.6 0.01 70);margin-bottom:14px}
+.foot-col a,.foot-col p{display:block;font-size:14px;margin-bottom:8px;color:oklch(0.8 0.01 70)}
+.foot-col a:hover{color:var(--paper)}
+.foot-bot{display:flex;justify-content:space-between;padding-top:20px;font-family:var(--mono);font-size:12px;color:oklch(0.58 0.01 70);flex-wrap:wrap;gap:10px}
+
+@media(max-width:900px){
+  .nav-links,.nav-phone{display:none}
+  .hero-grid,.serv,.maps-grid,.contact-grid{grid-template-columns:1fr}
+  .hero-side{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:28px}
+  .serv-vis{border-right:0;border-bottom:1px solid var(--line);min-height:280px}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .maps-info{border-right:0;border-bottom:1px solid var(--line)}
+  .gal-item{border-right:0;border-bottom:1px solid var(--line)}
+  .rev-item{grid-template-columns:1fr}
+  .rev-aside{text-align:left}
+}
+@media(max-width:560px){
+  .wrap{padding:0 20px}
+  .trust-item{border-right:0;border-bottom:1px solid var(--line);min-width:100%}
+  .foot-grid{grid-template-columns:1fr}
+  .about-stats{gap:28px}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#"><span class="mark">Z</span> Zøllner Helge</a>
+    <nav class="nav-links">
+      <a href="#ydelser">Ydelser</a>
+      <a href="#om-os">Om os</a>
+      <a href="#anmeldelser">Anmeldelser</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <div class="nav-right">
+      <span class="nav-phone">47 72 22 03</span>
+      <a class="btn btn-primary" href="tel:47 72 22 03">Ring nu</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Anlægsgartner · Frederiksværk</div>
+      <h1>Erfaren <em>anlægsgartner</em> i Frederiksværk</h1>
+      <p class="lede">Vi skaber smukke uderum — fra haveanlæg til terrasse og belægning.</p>
+      <p class="about-blurb">Vi skaber smukke uderum — fra haveanlæg til terrasse og belægning.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="tel:47 72 22 03">Ring: 47 72 22 03</a>
+        <a class="btn btn-ghost" href="#kontakt">Send besked</a>
+      </div>
+    </div>
+    <aside class="hero-side">
+      <div class="label">Hvorfor vælge os</div>
+      <ul class="hero-list">
+        <li><span class="n">01</span> Lokalt forankret i Frederiksværk</li>
+        <li><span class="n">02</span> Professionelt og pålideligt arbejde</li>
+        <li><span class="n">03</span> Hurtig og præcis udførelse</li>
+        <li><span class="n">04</span> Vi møder til aftalt tid</li>
+        <li><span class="n">05</span> Konkurrencedygtige priser</li>
+      </ul>
+      <div style="margin-top:22px"><div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:50px;padding:6px 16px;font-size:14px;margin-bottom:16px;"><span style="color:#facc15;">★★★★☆</span><span style="color:#e2e8f0;font-weight:600;">4 (1 anmeldelser)</span></div></div>
+      <div class="hero-stats">
+        <div class="s"><div class="v">CVR</div><div class="k">Ikke fundet</div></div>
+        <div class="s"><div class="v">Frederiksværk</div><div class="k">Lokalt område</div></div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust">
+  <div class="wrap">
+    <div class="trust-row">
+      <div class="trust-item"><span class="dot"></span> Erfaren anlægsgartner</div>
+      <div class="trust-item"><span class="dot"></span> Lokalt i Frederiksværk</div>
+      <div class="trust-item"><span class="dot"></span> Professionelt udstyr</div>
+      <div class="trust-item"><span class="dot"></span> Hurtig respons</div>
+      <div class="trust-item"><span class="dot"></span> Grøn ekspertise</div>
+    </div>
+  </div>
+</div>
+
+<!-- YDELSER -->
+<section class="blk" id="ydelser">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">01 — Hvad vi tilbyder</div>
+        <h2 style="margin-top:18px">Ydelser fra Zøllner Helge</h2>
+      </div>
+      <p class="meta">Professionel anlægsgartner i Frederiksværk — vi tager os af helheden.</p>
+    </div>
+    <div class="serv">
+      <div class="serv-vis"><img src="billeder/Zøllner Helge_foto.jpg" alt="Billede" onerror="this.parentElement.innerHTML='<div class=serv-vis-ph>Billede</div>'"></div>
+      <div class="serv-list">
+        
+        <div class="serv-item">
+            <span class="tag">🌿 Ydelse</span>
+            <h3>Haveanlæg & design</h3>
+            <p>Komplet anlæg af haven fra bund til top, tilpasset dit hjem og budget.</p>
+        </div>
+        <div class="serv-item">
+            <span class="tag">🪨 Service</span>
+            <h3>Belægning & fliser</h3>
+            <p>Indkjørsler, terrasser og stier i sten, fliser eller beton.</p>
+        </div>
+        <div class="serv-item">
+            <span class="tag">🌳 Arbejde</span>
+            <h3>Beplantning</h3>
+            <p>Planting af træer, buske og blomster med fokus på årstidernes udtryk.</p>
+        </div>
+        <div class="serv-item">
+            <span class="tag">🏗️ Løsning</span>
+            <h3>Hegn & afskærmning</h3>
+            <p>Træhegn, flethegn og mure — vi skaber privatliv i haven.</p>
+        </div>
+        <div class="serv-item">
+            <span class="tag">🔧 Tilbud</span>
+            <h3>Vedligeholdelse</h3>
+            <p>Løbende pasning og pleje af grønne arealer og private haver.</p>
+        </div>
+        <div class="serv-item">
+            <span class="tag">💧 Ydelse</span>
+            <h3>Dræn & jordarbejde</h3>
+            <p>Afvanding og jordmodificering for optimale vækstbetingelser.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOTO GALLERI -->
+
+<section style="border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:0;">
+    <div style="overflow:hidden;height:360px;"><img src="billeder/Zøllner Helge_galleri2.jpg" alt="Billede fra opgave" style="width:100%;height:100%;object-fit:cover;display:block;transition:.4s;" onerror="this.closest('div').remove()"></div><div style="overflow:hidden;height:360px;"><img src="billeder/Zøllner Helge_galleri3.jpg" alt="Billede fra opgave" style="width:100%;height:100%;object-fit:cover;display:block;transition:.4s;" onerror="this.closest('div').remove()"></div>
+  </div>
+</section>
+
+<!-- OM OS -->
+<section class="blk about-sec" id="om-os">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">02 — Om virksomheden</div>
+        <h2 style="margin-top:18px">Zøllner Helge</h2>
+      </div>
+      <p class="meta" style="color:oklch(0.7 0.01 70)">Erfaren anlægsgartner med base i Frederiksværk.</p>
+    </div>
+    <div class="about-body">Vi skaber smukke uderum — fra haveanlæg til terrasse og belægning.</div>
+    <div class="about-stats">
+      <div class="s"><div class="v">Frederiksværk</div><div class="k">Arbejdsområde</div></div>
+      <div class="s"><div class="v">47 72 22 03</div><div class="k">Direkte kontakt</div></div>
+      <div class="s"><div class="v">CVR Ikke fundet</div><div class="k">Registreret virksomhed</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ANMELDELSER -->
+<section class="blk" id="anmeldelser" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow">03 — Kundernes ord</div>
+        <h2 style="margin-top:18px">Anmeldelser af Zøllner Helge</h2>
+      </div>
+    </div>
+    <p style='color:var(--ink-faint);font-family:var(--mono);font-size:13px'>Ingen anmeldelser endnu.</p>
+  </div>
+</section>
+
+<!-- KORT / MAPS -->
+<section class="blk maps-sec" style="padding:0">
+  <div class="wrap" style="padding:0;max-width:100%">
+    <div class="maps-grid">
+      <div class="maps-info">
+        <div class="eyebrow" style="margin-bottom:24px">04 — Find os</div>
+        <h3>Zøllner Helge</h3>
+        <div class="detail"><strong>Adresse</strong> Kæruldvej 31, 3300 Frederiksværk, Denmark</div>
+        <div class="detail"><strong>Telefon</strong> <a href="tel:47 72 22 03" style="color:var(--accent)">47 72 22 03</a></div>
+        <div class="detail"><strong>CVR</strong> Ikke fundet</div>
+        <div class="detail"><strong>Område</strong> Frederiksværk</div>
+        <a class="btn btn-primary" href="tel:47 72 22 03" style="margin-top:28px">Ring nu: 47 72 22 03</a>
+      </div>
+      <div class="maps-embed">
+        <iframe src="https://maps.google.com/maps?q=K%C3%A6ruldvej+31%2C+3300+Frederiksv%C3%A6rk%2C+Denmark&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAKT -->
+<section class="contact blk" id="kontakt">
+  <div class="wrap contact-grid">
+    <div>
+      <div class="eyebrow">05 — Kontakt</div>
+      <h2>Få et uforpligtende tilbud</h2>
+      <p class="lede">Kontakt Zøllner Helge i Frederiksværk for en snak om din opgave — vi vender hurtigt tilbage.</p>
+      <div class="contact-info">
+        <div>📞 &nbsp;47 72 22 03</div>
+        <div>📍 &nbsp;Kæruldvej 31, 3300 Frederiksværk, Denmark</div>
+        <div>🏢 &nbsp;CVR: Ikke fundet</div>
+      </div>
+    </div>
+    <form class="contact-form" onsubmit="return false">
+      <div class="field"><label>Navn</label><input type="text" placeholder="Dit navn"></div>
+      <div class="field"><label>Telefon / E-mail</label><input type="text" placeholder="Så vi kan ringe tilbage"></div>
+      <div class="field"><label>Besked</label><textarea rows="4" placeholder="Beskriv kort din opgave…"></textarea></div>
+      <button class="btn btn-primary" style="width:100%;justify-content:center">Send besked til Zøllner Helge</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand"><span class="mark">Z</span> Zøllner Helge</div>
+        <p style="color:oklch(0.7 0.01 70);font-size:14px;max-width:32ch">Professionel anlægsgartner med base i Frederiksværk.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Kontakt</h4>
+        <p>47 72 22 03</p>
+        <p>Kæruldvej 31, 3300 Frederiksværk, Denmark</p>
+        <p>CVR: Ikke fundet</p>
+      </div>
+      <div class="foot-col">
+        <h4>Navigation</h4>
+        <a href="#ydelser">Ydelser</a>
+        <a href="#om-os">Om os</a>
+        <a href="#anmeldelser">Anmeldelser</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2025 Zøllner Helge · CVR: Ikke fundet</span>
+      <span>Kæruldvej 31, 3300 Frederiksværk, Denmark</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.faq-item').forEach(it=>{
+  it.querySelector('.faq-q')?.addEventListener('click',()=>it.classList.toggle('open'));
+});
+</script>
+</body>
+</html>
